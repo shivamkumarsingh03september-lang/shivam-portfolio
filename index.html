@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SHIVAM SINGH- Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">SHIVAM SINGH</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <img src="images/profile.jpg" alt="SHIVAM" class="profile-pic"/>
+            <h2>Hello, I'm SHIVAM</h2>
+            <h3> A 2nd Year B.Tech CSE Student @ Narula Institute of Technology</h3>
+            <p>Passionate about Coding, Web Development & DSA</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="https://github.com/shivamkumarsingh03september-lang/shiv-demo.git" class="btn" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/shivam-singh-26a191396" class="btn" target="_blank">LinkedIn</a>
+                <a href="https://x.com/shiv03amsingh" class="btn" target="_blank">X (@shiv03amsingh)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 data-aos="fade-right">About Me</h2>
+            <p data-aos="fade-left" data-aos-delay="200">
+            <strong>2nd Year | B.Tech CSE | Narula Institute of Technology</strong>.<br>
+            Schooling: Shree Jain Vidyalaya (WBBSE/WBBHSE) - 86% in 10th, 82% in 12th (Science).<br><br>
+I believe talent is equally distributed, but opportunity isn't — so I'm creating my own.<br>
+Strong fundamentals in C/C++, Python, JavaScript, SQL & DBMS, combined with daily DSA practice and real project-building, are my weapons.
+Currently grinding to become the kind of developer companies fight for — not just another resume in the pile.<br>
+                Currently focusing on building strong fundamentals in DSA and full-stack web development to prepare for internships and placements.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 data-aos="fade-right">Skills</h2>
+            <div class="skills-grid" data-aos="fade-left" data-aos-delay="200">
+                <div class="skill-card"><i class="fas fa-code"></i> C / C++</div>
+                <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-card"><i class="fab fa-html5"></i> HTML</div>
+                <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS</div>
+                <div class="skill-card"><i class="fas fa-database"></i> SQL & DBMS</div>
+                <div class="skill-card"><i class="fas fa-file-excel"></i> MS Excel</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects (Add more as you build) -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 data-aos="fade-right">Projects</h2>
+            <div class="projects-grid" data-aos="fade-left" data-aos-delay="200">
+                <div class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Responsive portfolio with dark mode & animations (HTML, CSS, JS)</p>
+                    <a href="#" class="btn small">Live Demo</a>
+                </div>
+                <!-- Add more cards here later -->
+                <div class="project-card coming-soon">
+                    <h3>More Projects Coming Soon...</h3>
+                    <p>Full-Stack Web Apps • DSA Visualizations • API Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+    <div class="container">
+        <h2 data-aos="fade-right"><i class="fas fa-envelope" style="color: #007bff; margin-right: 0.8rem;"></i>Get In Touch</h2>
+
+        <!-- Social Icons -->
+        <div class="social-icons" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://x.com/shiv03amsingh" target="_blank" class="social-icon twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/shivamsingh_ss_/" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/shivamkumarsingh03september-lang/shiv-demo.git" target="_blank" class="social-icon github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shivam-singh-26a191396" target="_blank" class="social-icon linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SHIVAM | Narula Institute of Technology</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>
