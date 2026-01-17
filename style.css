@@ -1,4 +1,8 @@
 * { margin:0; padding:0; box-sizing:border-box; }
+.profile-pic {
+    border: 8px solid #f0f0f0;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -41,17 +45,35 @@ body.dark .navbar { background: #1e1e1e; box-shadow: 0 2px 15px rgba(0,0,0,0.5);
 
 .theme-toggle { font-size: 1.4rem; cursor: pointer; }
 
-/* Hero */
+/* Hero - Light/White by default */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+    background: #ffffff;                    /* Pure white */
+    Optional soft gradient if you like a tiny bit of depth: 
+     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); 
+    color: #333;                            /* Dark text for contrast */
 }
-body.dark .hero { background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); }
+.hero h2 {
+    color: #111;  /* Almost black for strong contrast */
+    font-weight: 700;
+}
+
+.hero h3 {
+    color: #555;
+}
+
+.hero p {
+    color: #666;
+}
+body.dark .hero {
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    color: #e0e0e0;
+}
+body.dark h2, body.dark h3 { color: #fff; }
 
 .hero-content { max-width: 700px; }
 .profile-pic {
