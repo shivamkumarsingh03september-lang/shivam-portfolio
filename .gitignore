@@ -1,6 +1,5 @@
 # Ignore secrets
 .env
-config.js
 
 # Ignore system/temp files
 .DS_Store
