@@ -20,3 +20,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+// Function to inject private links
+window.addEventListener('DOMContentLoaded', () => {
+    // Hero Buttons
+    document.getElementById('hero-github').href = myPrivateLinks.github;
+    document.getElementById('hero-linkedin').href = myPrivateLinks.linkedin;
+
+    // Social Icons
+    document.getElementById('social-twitter').href = myPrivateLinks.twitter;
+    document.getElementById('social-instagram').href = myPrivateLinks.instagram;
+    document.getElementById('social-github').href = myPrivateLinks.github;
+    document.getElementById('social-linkedin').href = myPrivateLinks.linkedin;
+});
